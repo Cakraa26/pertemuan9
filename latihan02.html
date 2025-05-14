@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript 02</title>
+    <style>
+      #p1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Isi dari sebuah paragraf</p>
+    <p id="p1">Isi dari sebuah paragraf ke dua</p>
+    <button onclick="GantiText()">Ganti Text</button>
+
+    <div id="txPesan">Tulis Pesan</div>
+
+    <label for="PSN">Pesan</label>
+    <input type="text" name="PSN" id="PSN" />
+    <button onclick="GantiPesan()">Ganti Pesan</button>
+
+    <script>
+      //   document.write('Tulisan dibuat dengan javascript');
+
+      //   for (let i = 0; i < 10; i++) {
+      //     document.writeln(i);
+      //   }
+      function GantiText() {
+        let pa1 = document.getElementById('p1');
+        p1.innerHTML = 'Berikut text pengganti dari paragraf dua';
+        p1.style.color = 'black';
+        p1.style.fontWeight = 'bold';
+      }
+      function GantiPesan() {
+        let psn = document.getElementById('PSN').value;
+        document.getElementById('txPesan').innerText = psn;
+        // console.log(psn);
+      }
+    </script>
+  </body>
+</html>

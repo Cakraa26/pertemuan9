@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Javascript 03</title>
+  </head>
+  <body>
+    <h3>Hitung Luas Persegi Panjang</h3>
+      <label for="panjang">Panjang</label>
+      <input type="text" name="panjang" id="panjang" />
+      <label for="lebar">Lebar</label>
+      <input type="text" name="lebar" id="lebar" />
+      <button onclick="Hitung()">Hitung</button>
+      <span id="luas">
+
+    <script>
+      function Hitung() {
+        let panjang = document.getElementById('panjang').value;
+        let lebar = document.getElementById('lebar').value;
+        document.getElementById('luas').innerText = panjang * lebar;
+      }
+    </script>
+  </body>
+</html>
